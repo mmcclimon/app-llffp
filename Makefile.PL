@@ -13,13 +13,15 @@ WriteMakefile(
     MIN_PERL_VERSION => 5.006,
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker' => 0,
+        'DBIx::Class' => '0.082820',
     },
     BUILD_REQUIRES => {
         'Test::More' => 0,
     },
     PREREQ_PM => {
-        #'ABC'              => 1.6,
-        #'Foo::Bar::Module' => 5.0401,
+        'DBD::SQLite'       => 1.0,
+        'DBIx::Class'       => 0.08,
+        'Moo'               => 2.0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'App-llffp-*' },
